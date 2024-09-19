@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz2</title>
+</head>
+<body>
+
+    Q1. Sum up 2 & 3<br>
+    <input type="radio" name="question1">3<br>
+    <input type="radio" name="question1" id="correct1">5<br>
+    <input type="radio" name="question1">8<br>
+    <input type="radio" name="question1">9<br>
+
+    Q2. Name the capital of India<br>
+    <input type="radio" name="question2">Kanpur<br>
+    <input type="radio" name="question2">Madras<br>
+    <input type="radio" name="question2">Jaipur<br>
+    <input type="radio" name="question2" id="correct2">Delhi<br>
+
+
+    Q3. Multiply 2 & 3<br>
+    <input type="radio" name="question3">5<br>
+    <input type="radio" name="question3" id="correct3">6<br>
+    <input type="radio" name="question3">7<br>
+    <input type="radio" name="question3">9<br>
+
+    Q4. Divide up 3 by 2<br>
+    <input type="radio" name="question4">1<br>
+    <input type="radio" name="question4" id="correct4">1.5<br>
+    <input type="radio" name="question4">2<br>
+    <input type="radio" name="question4">2.5<br>
+
+    Q3. How many days make a leap year<br>
+    <input type="radio" name="question5">365<br>
+    <input type="radio" name="question5">266<br>
+    <input type="radio" name="question5" id="correct5">366<br>
+    <input type="radio" name="question5">900<br>
+
+    <input type="submit" name="submit" value="submitQuiz" onclick="result()">  
+
+
+    <script type="text/javascript">
+        function result() {
+            var score = 0
+            if(document.getElementById('correct1').checked) { score++ ;}
+            if(document.getElementById('correct2').checked) { score++ ;}
+            if(document.getElementById('correct3').checked) { score++ ;}
+            if(document.getElementById('correct4').checked) { score++ ;}
+            if(document.getElementById('correct5').checked) { score++ ;}
+            alert("Your score is " + score)
+        }
+    </script>
+    
+</body>
+</html>
